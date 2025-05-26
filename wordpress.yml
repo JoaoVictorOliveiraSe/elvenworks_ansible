@@ -1,0 +1,10 @@
+---
+  - name: instalacao wordpress
+    hosts: localhost
+    vars_files:
+    - vars/wordpress.yml
+    
+    #
+    roles:
+      - mysql-server
+      - wordpress
